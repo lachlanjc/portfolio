@@ -1,7 +1,7 @@
 {
-  "name": "react-static-starter",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "portfolio",
+  "version": "0.0.1",
+  "main": "src/index.js",
   "license": "MIT",
   "scripts": {
     "start": "react-static start",
@@ -14,10 +14,7 @@
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-static": "4.x.x",
+    "serve": "^6.4.1",
     "styled-components": "2.2.4"
-  },
-  "devDependencies": {
-    "eslint-config-react-tools": "1.x.x",
-    "serve": "^6.4.1"
   }
 }
