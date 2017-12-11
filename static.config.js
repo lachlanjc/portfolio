@@ -4,41 +4,24 @@ import { ServerStyleSheet } from 'styled-components'
 
 export default {
   getSiteProps: () => ({
-    title: 'React Static',
+    title: 'Portfolio'
   }),
-  getRoutes: async () => {
-    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
-    return [
-      {
-        path: '/',
-        component: 'src/containers/Home',
-      },
-      {
-        path: '/about',
-        component: 'src/containers/About',
-      },
-      {
-        path: '/blog',
-        component: 'src/containers/Blog',
-        getProps: () => ({
-          posts,
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: 'src/containers/Post',
-          getProps: () => ({
-            post,
-          }),
-        })),
-      },
-      {
-        is404: true,
-        component: 'src/containers/404',
-      },
-    ]
-  },
+  getRoutes: async () => [
+    {
+      path: '/',
+      component: 'src/containers/Home'
+    },
+    {
+      path: '/about',
+      component: 'src/containers/About'
+    },
+    {
+      is404: true,
+      component: 'src/containers/404'
+    }
+  ],
   Html: class CustomHtml extends Component {
-    render () {
+    render() {
       const { Html, Head, Body, children } = this.props
 
       const sheet = new ServerStyleSheet()
@@ -48,12 +31,16 @@ export default {
       return (
         <Html>
           <Head>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Portfolio – @lachlanjc</title>
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
             {styleTags}
           </Head>
           <Body>{newChildren}</Body>
         </Html>
       )
     }
-  },
+  }
 }
