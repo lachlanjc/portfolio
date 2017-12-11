@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
+import theme from './src/theme'
 
 export default {
   getSiteProps: () => ({
@@ -30,14 +31,14 @@ export default {
 
       return (
         <Html>
-          <Head>
+          <head>
             <title>Portfolio – @lachlanjc</title>
             <meta
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
             {styleTags}
-          </Head>
+          </head>
           <Body>{newChildren}</Body>
         </Html>
       )

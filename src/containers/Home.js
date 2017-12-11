@@ -1,4 +1,5 @@
-import React from 'react'
-import { getSiteProps } from 'react-static'
-//
-export default getSiteProps(({ title }) => <h1>Welcome to {title}!</h1>)
+import React, { Fragment } from 'react'
+import { Container, Heading, Flex, Box, Image, Subhead, Text } from 'rebass'
+import theme, { colors, mx } from '../theme'
+
+export default () => <div />

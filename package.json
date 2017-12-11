@@ -17,6 +17,7 @@
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-static": "4.x.x",
+    "rebass": "^1.0.4",
     "serve": "^6.4.1",
     "styled-components": "2.2.4"
   }

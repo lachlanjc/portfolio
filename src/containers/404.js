@@ -1,8 +1,14 @@
 import React from 'react'
-//
+import { Container, Heading, Flex, Box, Subhead, Text } from 'rebass'
+import theme, { colors, mx } from '../theme'
+
+const Base = Container.extend.attrs({
+  my: [4, 5],
+  color: 'red'
+})`text-align: center;`
 
 export default () => (
-  <div>
-    <h1>404 - Oh no's! We couldn't find that page :(</h1>
-  </div>
+  <Base>
+    <Heading>404!</Heading>
+  </Base>
 )

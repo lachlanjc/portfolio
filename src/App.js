@@ -1,54 +1,40 @@
 import React from 'react'
-import { Router, Link } from 'react-static'
-import styled, { injectGlobal } from 'styled-components'
-//
+import { Router } from 'react-static'
+import { injectGlobal } from 'styled-components'
 import Routes from 'react-static-routes'
+import { Provider } from 'rebass'
+import theme from './theme'
+import Header from './components/Header'
 
 injectGlobal`
+  * { box-sizing: border-box; }
   body {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-      'Lucida Grande', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
     margin: 0;
-    padding: 0;
+    color: ${theme.colors.black};
+    line-height: 1.625;
   }
-`
-
-const AppStyles = styled.div`
-  a {
-    text-decoration: none;
-    color: #108db8;
+  a { text-decoration: none; }
+  @font-face {
+    font-family: Averta;
+    font-style: normal;
+    font-weight: normal;
+    src: url(https://hackclub.com/fonts/averta-regular.woff2) format('woff2'), url(https://hackclub.com/fonts/averta-regular.woff) format('woff');
+    unicode-range: U + 0000 - F8FE, U + F900-FFFF;
+  }
+  @font-face {
+    font-family: Averta;
+    font-style: normal;
     font-weight: bold;
-  }
-
-  nav {
-    width: 100%;
-    background: #108db8;
-
-    a {
-      color: white;
-      padding: 1rem;
-      display: inline-block;
-    }
-  }
-
-  .content {
-    padding: 1rem;
+    src: url(https://hackclub.com/fonts/averta-bold.woff2) format('woff2'), url(https://hackclub.com/fonts/averta-bold.woff) format('woff');
+    unicode-range: U + 0000 - F8FE, U + F900-FFFF;
   }
 `
 
 export default () => (
   <Router>
-    <AppStyles>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
-      <div className="content">
-        <Routes />
-      </div>
-    </AppStyles>
+    <Provider theme={theme}>
+      <Header />
+      <Routes />
+    </Provider>
   </Router>
 )
