@@ -1,5 +1,15 @@
 import React, { Fragment } from 'react'
-import { Container, Heading, Flex, Box, Image, Subhead, Text } from 'rebass'
+import {
+  Container,
+  Heading,
+  Flex,
+  Box,
+  Image,
+  Subhead,
+  Text,
+  ButtonOutline
+} from 'rebass'
+import { Link } from 'react-static'
 import theme, { colors, mx } from '../theme'
 
 const Masthead = Flex.extend.attrs({
@@ -43,6 +53,17 @@ const Portrait = Image.extend`
     border-radius: 24px;
     max-height: 64vh;
   }
+`
+
+const Go = ButtonOutline.extend.attrs({
+  color: 'blue',
+  mt: 3,
+  f: 3,
+  py: 3,
+  px: 4
+})`
+  display: inline-block;
+  width: intrinsic;
 `
 
 const NameBox = Container.extend.attrs({
@@ -96,6 +117,9 @@ export default () => (
           I’m a high schooler interested in visual and industrial design with a
           penchant for typography.
         </Bio>
+        <Go is={Link} to="/work">
+          View work
+        </Go>
       </NameBox>
     </Masthead>
     <Divider />

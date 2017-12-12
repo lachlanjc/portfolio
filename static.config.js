@@ -10,11 +10,11 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/containers/Home'
+      component: 'src/containers/About'
     },
     {
-      path: '/about',
-      component: 'src/containers/About'
+      path: '/work',
+      component: 'src/containers/Work'
     },
     {
       is404: true,

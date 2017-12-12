@@ -25,10 +25,8 @@ export default () => (
       Lachlan Campbell
     </Title>
     <Nav>
-      <NavLink is={Link} to="/ms" children="Master Studio" />
-      <NavLink is={Link} to="/risd" children="RISD" />
-      <NavLink is={Link} to="/design" children="Design" />
-      <NavLink is={Link} to="/about" children="About" />
+      <NavLink is={Link} to="/" children="About" />
+      <NavLink is={Link} to="/work" children="Work" />
     </Nav>
   </Header>
 )
