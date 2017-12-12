@@ -12,6 +12,7 @@ const Masthead = Flex.extend.attrs({
   ${mx[0]} {
     min-height: 80vh;
     text-align: left;
+    > div { max-width: 50%; }
   }
 `
 const Name = Heading.extend.attrs({ f: 6, mt: 0, mb: 3 })`
@@ -30,7 +31,7 @@ const PortraitBox = props => (
     align={['center', 'flex-end']}
     flex="1 1 auto"
     p={[3, 4]}
-    pr={[null, 0]}
+    pr={[null, 4]}
     {...props}
   />
 )
@@ -46,15 +47,25 @@ const Portrait = Image.extend`
 
 const NameBox = Container.extend.attrs({
   py: 2,
-  pl: [null, 5],
-  maxWidth: 32 * 16
+  px: [2, 4]
 })`
+  p {
+    max-width: 32rem;
+  }
   ${mx[0]} {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 `
+
+const Divider = Box.extend.attrs({
+  bg: 'base',
+  w: 128,
+  py: 1,
+  my: 4,
+  mx: 'auto'
+})`border-radius: 1rem;`
 
 const Article = Container.extend.attrs({ maxWidth: 36 * 16, my: [4, 5] })`
   p {
@@ -87,6 +98,7 @@ export default () => (
         </Bio>
       </NameBox>
     </Masthead>
+    <Divider />
     <Article>
       <Heading>Artist Statement</Heading>
       <p>
