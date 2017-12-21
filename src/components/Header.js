@@ -3,12 +3,12 @@ import { Link } from 'react-static'
 import { Heading, Group, Box, Link as A } from 'rebass'
 import theme, { colors } from '../theme'
 
-const Header = Box.extend.attrs({ p: [3, 4] })`
+const Header = Box.extend.attrs({ bg: 'blue', p: [3, 4] })`
   border-bottom: 1px solid ${colors.smoke};
   text-align: center;
 `
 
-const Title = Heading.extend.attrs({ f: [4, 5], color: 'blue' })``
+const Title = Heading.extend.attrs({ f: [4, 5], color: 'white' })``
 
 const Nav = Group.extend.attrs({ mt: 3 })`
   font-family: ${theme.mono};
@@ -24,9 +24,9 @@ export default () => (
     <Title is={Link} to="/">
       Lachlan Campbell
     </Title>
-    <Nav>
+    {/* <Nav>
       <NavLink is={Link} to="/" children="About" />
       <NavLink is={Link} to="/work" children="Work" />
-    </Nav>
+    </Nav> */}
   </Header>
 )

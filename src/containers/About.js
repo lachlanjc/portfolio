@@ -11,6 +11,7 @@ import {
 } from 'rebass'
 import { Link } from 'react-static'
 import theme, { colors, mx } from '../theme'
+import Divider from '../components/Divider'
 
 const Masthead = Flex.extend.attrs({
   direction: ['column', 'row'],
@@ -80,15 +81,7 @@ const NameBox = Container.extend.attrs({
   }
 `
 
-const Divider = Box.extend.attrs({
-  bg: 'base',
-  w: 128,
-  py: 1,
-  my: 4,
-  mx: 'auto'
-})`border-radius: 1rem;`
-
-const Article = Container.extend.attrs({ maxWidth: 36 * 16, my: [4, 5] })`
+const Article = Container.extend.attrs({ maxWidth: 36 * 16 })`
   p {
     font-family: ${theme.mono};
     line-height: 1.625;
@@ -101,8 +94,17 @@ const Article = Container.extend.attrs({ maxWidth: 36 * 16, my: [4, 5] })`
 `
 
 const Quote = Text.extend.attrs({ color: 'accent', p: 3, f: 4 })`
+  font-family: ${theme.mono};
   font-weight: 600;
   font-style: italic;
+  line-height: 1.375;
+  cite {
+    color: ${colors.slate};
+    display: block;
+    font-size: .875rem;
+    font-style: normal;
+    margin-top: .5rem;
+  }
 `
 
 export default () => (
@@ -124,6 +126,14 @@ export default () => (
     </Masthead>
     <Divider />
     <Article>
+      <Quote>
+        The only secret of magic is that I'm willing to work harder on it than
+        you think it’s worth.
+        <cite>—Penn Jillette</cite>
+      </Quote>
+    </Article>
+    <Divider />
+    <Article my={[4, 5]}>
       <Heading>Artist Statement</Heading>
       <p>
         We, the always-connected, are drowning in information. Headlines,

@@ -1,15 +1,108 @@
 [
   {
-    "name": "RISD Pre-College 2017",
-    "desc": "Summer 2017, I moved to Providence.",
+    "name": "Master Studio",
+    "desc": "High school course with Maure Irwin-Furmanek.",
     "work": [
       {
-        "img": "",
-        "caption": "This chair"
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FIMG_2914.jpg?1513842352257",
+        "caption": "Social commentary silkscreen print on AI-based automation"
       },
       {
-        "img": "",
-        "caption": "This light"
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FSoA7R2_02_2018_1200p.jpg.jpeg?1513841941743",
+        "caption":
+          "“Divergent”—painting of Block Island beach with a bicycle tire",
+        "cols": 2
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FIMG_0149.jpg?1513842134341",
+        "caption": "Encaustic piece based on Lake Zumbra"
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FMaster%20Studio%20-%202017-10-22%2020.21.06.png?1513842502166",
+        "caption": "Self-portrait"
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FEFF.png?1513842667982",
+        "caption": "Poster for the EFF"
+      }
+    ]
+  },
+  {
+    "name": "RISD Pre-College 2017",
+    "desc":
+      "Over summer 2017, I lived in Providence, RI, studying industrial design at RISD’s Pre-College Program.",
+    "work": [
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FLight.jpg?1513838075630",
+        "caption": "Nature-inspired lighting design"
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FChair.jpg?1513838064448",
+        "caption":
+          "Chair designed out of two sheets of cardboard with no fasteners",
+        "cols": 2
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FZephyros.jpg?1513838065224",
+        "caption": "My final project, based on a TED Talk"
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FBoard.jpg?1513838075602",
+        "caption":
+          "Tradeshow exhibit designed for the VanMoof electric bicycle",
+        "cols": 2,
+        "rows": 2
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FPaper.Hot%20Wheels.2.png?1513842831302",
+        "caption": "Concept Hot Wheels car"
+      }
+    ]
+  },
+  {
+    "name": "Digital",
+    "desc":
+      "I build apps and websites of all kinds, especially open source. I specialize in React, CSS, and Rails.",
+    "work": [
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FFossil%20Funded.jpg?1513838069960",
+        "caption":
+          "Fossil Funded: Speak out against the fossil fuel industry funding Congress"
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2Fstart_4.png?1513840444876",
+        "caption": "Secondary page for Hack Club"
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2Fhome_2.png?1513840449525",
+        "caption": "Homepage for Hack Club",
+        "rows": 2
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FNoodles.jpg?1513838060106",
+        "caption": "Noodles: Cook better with all your recipes in one place",
+        "cols": 2,
+        "rows": 2
+      },
+      {
+        "img":
+          "https://cdn.glitch.com/b7e03a8d-7d29-4d6a-82e9-2563b1009d8c%2FBlink.jpeg?1513838065327",
+        "caption":
+          "Blink: Easy, affordable, accurate communication for locked-in patients"
       }
     ]
   }

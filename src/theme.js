@@ -1,10 +1,8 @@
-import palx from 'palx'
-
-const blue = '#2962ff'
+const blue = '#009EEB'
 export const colors = {
   base: blue,
-  accent: '#aa00ff',
-  red: '#ff1744',
+  accent: '#592DEA',
+  red: '#FF4949',
   blue,
 
   black: '#1f2d3d',
