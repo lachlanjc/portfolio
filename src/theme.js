@@ -27,7 +27,7 @@ const theme = {
   radius: 4,
   weights: [400, 700],
   font: 'Averta, Roboto, sans-serif',
-  mono: 'SFMono-Regular, Courier New, monospace'
+  mono: 'SFMono-Regular, "Source Code Pro", Courier New, monospace'
 }
 
 export default theme

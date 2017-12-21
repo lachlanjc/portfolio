@@ -9,7 +9,7 @@ import {
   Text,
   ButtonOutline
 } from 'rebass'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 import theme, { colors, mx } from '../theme'
 import Divider from '../components/Divider'
 

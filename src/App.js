@@ -1,10 +1,11 @@
-import React from 'react'
-import { Router } from 'react-static'
+import React, { Fragment } from 'react'
+import { StaticRouter, BrowserRouter, Route, Link } from 'react-router-dom'
 import { injectGlobal } from 'styled-components'
-import Routes from 'react-static-routes'
 import { Provider } from 'rebass'
 import theme from './theme'
 import Header from './components/Header'
+import About from './containers/About'
+import Work from './containers/Work'
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -30,11 +31,25 @@ injectGlobal`
   }
 `
 
-export default () => (
-  <Router>
-    <Provider theme={theme}>
-      <Header />
-      <Routes />
-    </Provider>
+// universal router component
+const Router = typeof document !== 'undefined' ? BrowserRouter : StaticRouter
+
+const App = props => (
+  <Router basename={props.basename} location={props.pathname}>
+    <Fragment>
+      <title>Portfolio – @lachlanjc</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="//brick.a.ssl.fastly.net/Source+Code+Pro:400,700"
+      />
+      <Provider theme={theme}>
+        <Header />
+        <Route exact path="/" render={() => <About {...props} />} />
+        <Route path="/work" render={() => <Work {...props} />} />
+      </Provider>
+    </Fragment>
   </Router>
 )
+
+export default App

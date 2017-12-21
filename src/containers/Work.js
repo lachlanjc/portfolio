@@ -9,7 +9,7 @@ import {
   Subhead,
   Text
 } from 'rebass'
-import { Link } from 'react-static'
+import { Link } from 'react-router-dom'
 import theme, { colors, mx } from '../theme'
 import data from '../../data.json'
 import Divider from '../components/Divider'
@@ -99,8 +99,14 @@ export default () => (
           <Title children={cat.name} />
           <Desc children={cat.desc} />
           <Gallery>
-            {cat.work.map(({ img, caption, ...props }, i) => (
-              <Item is="a" href={img} target="_blank" {...props}>
+            {cat.work.map(({ img, caption, ...props }, ii) => (
+              <Item
+                is="a"
+                href={img}
+                target="_blank"
+                {...props}
+                key={`work-${i}-${ii}`}
+              >
                 <ItemImage src={img} />
                 <Caption children={caption} />
               </Item>

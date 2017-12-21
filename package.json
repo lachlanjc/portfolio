@@ -4,21 +4,26 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "react-static start",
-    "build": "react-static build",
+    "dev": "x0 dev src/App.js -op 3000",
+    "start": "npm run dev",
+    "build":
+      "x0 build src/App.js --out-dir dist --static --cssLibrary='styled-components'",
     "serve": "serve dist -p 3000",
     "deploy": "gh-pages -d dist",
     "go": "npm run build && npm run deploy"
   },
   "dependencies": {
+    "@compositor/x0": "^3.0.2",
     "axios": "^0.17.1",
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
-    "react-static": "4.x.x",
     "rebass": "^1.0.4",
     "serve": "^6.4.3",
     "styled-components": "2.3.3"
+  },
+  "x0": {
+    "routes": ["/", "/work"]
   }
 }
