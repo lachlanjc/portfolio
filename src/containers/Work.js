@@ -81,7 +81,7 @@ const Caption = Text.extend.attrs({
 export default () => (
   <Fragment>
     <style children={`body{background-color:${colors.snow};}`} />
-    <Header is={Link} to="/">
+    <Header is={Link} to="/portfolio">
       <Avatar
         size={72}
         mr={3}

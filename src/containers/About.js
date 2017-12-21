@@ -119,7 +119,7 @@ export default () => (
           I’m a high schooler interested in visual and industrial design with a
           penchant for typography.
         </Bio>
-        <Go is={Link} to="/work">
+        <Go is={Link} to="/portfolio/work">
           View work
         </Go>
       </NameBox>
