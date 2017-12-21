@@ -124,15 +124,6 @@ export default () => (
         </Go>
       </NameBox>
     </Masthead>
-    <Divider />
-    <Article>
-      <Quote>
-        The only secret of magic is that I'm willing to work harder on it than
-        you think it’s worth.
-        <cite>—Penn Jillette</cite>
-      </Quote>
-    </Article>
-    <Divider />
     <Article my={[4, 5]}>
       <Heading>Artist Statement</Heading>
       <p>
